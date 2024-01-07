@@ -50,6 +50,12 @@ public class studentcontroller {
 	}
 	
 	
+	@GetMapping("/hello")
+	public String hello() {
+		return "hello";
+	}
+	
+	
 	
 	@GetMapping("/fetch/{location}")
 	public List<studentmodels> getBylocation (@PathVariable String location) {
